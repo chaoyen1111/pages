@@ -658,6 +658,7 @@ li > h5 {
 .hoverbox {
   position: relative;
   width: 50%;
+  cursor: pointer;
   /* max-width: 300px; */
 }
 
@@ -716,4 +717,9 @@ table tr {
 .nopadding {
   padding: 0 !important;
   margin: 0 !important;
+}
+
+.mySlides > p {
+  color: #373c38;
+  font-weight: 200;
 }

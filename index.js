@@ -53,7 +53,7 @@ var background_image_parallax_2 = function ($object, multiplier) {
 
     $object.css({ 'background-position': bg_css });
   });
-  console.log($object);
+  // console.log($object);
 };
 
 $(function () {
@@ -90,22 +90,26 @@ $(function () {
   // Add smooth scrolling to all links
   // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
   $('a').on('click', function (event) {
-    if (this.hash !== '') {
-      event.preventDefault();
-      var hash = this.hash;
+    // console.log(this.hash);
+    // console.log(this.href);
+    // console.log(this.className);
+    if (this.className.indexOf('hash-link') !== -1) {
+      if (this.hash !== '') {
+        event.preventDefault();
+        var hash = this.hash;
 
-      $('html, body').animate(
-        {
-          scrollTop: $(hash).offset().top,
-        },
-        400,
-        function () {
-          window.location.hash = hash;
-        }
-      );
-    } // End if
-    else {
-      window.location.href = this.href;
+        $('html, body').animate(
+          {
+            scrollTop: $(hash).offset().top,
+          },
+          400,
+          function () {
+            window.location.hash = hash;
+          }
+        );
+      } // End if
+    } else {
+      window.open(this.href);
     }
   });
 
