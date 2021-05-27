@@ -214,19 +214,25 @@ a:focus {
   font-weight: normal;
 }
 
+@media (max-width: 1200px) {
+  .tm-section-title {
+    font-size: 2.6rem;
+    font-weight: normal;
+  }
+}
+
+@media (max-width: 480px) {
+  .tm-section-title {
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+}
+
 .tm-icon {
   display: block;
   margin-bottom: 20px;
   color: rgb(92, 170, 127);
 }
-
-/* .tm-intro-text-li {
-  list-style-type: none;
-  font-size: 1.5rem;
-
-  line-height: 1.8;
-  color: rgb(92, 170, 127);
-} */
 
 /* Work */
 
@@ -340,69 +346,6 @@ a:focus {
   font-size: 68.5%;
 }
 
-/* hover 合作廠商 */
-
-/* figure.effect-honey {
-  background: white;
-  max-width: 100%;
-}
-
-figure.effect-honey img {
-  opacity: 0.9;
-  -webkit-transition: opacity 0.35s;
-  transition: opacity 0.35s;
-}
-
-figure.effect-honey:hover img {
-  opacity: 0.5;
-}
-
-figure.effect-honey figcaption::before {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 10px;
-  background: rgb(92, 170, 127);
-  content: '';
-  -webkit-transform: translate3d(0, 10px, 0);
-  transform: translate3d(0, 10px, 0);
-}
-
-figure.effect-honey h4 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 1em 1.5em;
-  width: 100%;
-  text-align: left;
-  -webkit-transform: translate3d(0, -30px, 0);
-  transform: translate3d(0, -30px, 0);
-}
-
-figure.effect-honey h4 i {
-  font-style: normal;
-  opacity: 0;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(0, -30px, 0);
-  transform: translate3d(0, -30px, 0);
-}
-
-figure.effect-honey figcaption::before,
-figure.effect-honey h4 {
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-}
-
-figure.effect-honey:hover figcaption::before,
-figure.effect-honey:hover h4,
-figure.effect-honey:hover h4 i {
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-} */
-
 /* Contact */
 
 #contact {
@@ -410,10 +353,10 @@ figure.effect-honey:hover h4 i {
   background-image: url(../img/bg-b.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 850px;
+  min-height: auto !;
   position: relative;
   padding-bottom: 50px;
-  padding-top: 160px;
+  padding-top: 100px;
 }
 
 .tm-underline {
@@ -567,9 +510,17 @@ li > h5 {
   margin: 6px 0 0 9px;
 }
 
+/* 感應器 */
+
 .article-image {
   width: 400px;
   padding: 20px;
+}
+
+@media (max-width: 375px) {
+  .img01 {
+    width: 400px;
+  }
 }
 
 .img01:hover {
@@ -580,7 +531,8 @@ li > h5 {
   background-color: white;
   width: 400px;
   height: 560px;
-  margin-right: 15px;
+  margin: 10px;
+  /* margin-right: 15px; */
   position: relative;
 }
 
@@ -592,7 +544,8 @@ li > h5 {
   background-color: white;
   width: 400px;
   height: 560px;
-  margin-left: 15px;
+  margin: 10px;
+  /* margin-left: 15px; */
   position: relative;
 }
 
@@ -630,6 +583,16 @@ li > h5 {
   overflow: scroll;
   overflow-x: hidden;
   box-shadow: 8px 8px 8px rgb(0, 0, 0, 0.4);
+  margin-top: 50px;
+}
+
+@media (max-width: 375px) {
+  .modal-content {
+    width: 80%;
+  }
+  .mySlides > p {
+    font-size: 15px;
+  }
 }
 
 /* The Close Button */
@@ -714,12 +677,17 @@ table tr {
   font-weight: 200;
 }
 
-.nopadding {
+/* .nopadding {
   padding: 0 !important;
   margin: 0 !important;
-}
+} */
 
 .mySlides > p {
   color: #373c38;
   font-weight: 200;
+}
+
+img {
+  max-width: 100%;
+  height: auto !important;
 }
