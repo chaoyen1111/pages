@@ -36,7 +36,7 @@
             <i class="fas fa-bars navbar-toggler-icon"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto text-center">
               <li class="nav-item">
                 <a class="nav-link tm-nav-link hash-link" href="#introduction"
                   >產品介紹</a
@@ -136,7 +136,7 @@
           </div>
         </div>
         <div class="row mt-5 mb-5 justify-content-center">
-          <div style="margin: 30px">
+          <div class="in-1">
             <div class="col d-flex">
               <img src="./img/select-01.svg" alt="" class="checkSvg" />
               <h5>手機直接巡田、灌溉、控制設施</h5>
@@ -150,7 +150,7 @@
               <h5>降低農損，提升產量</h5>
             </div>
           </div>
-          <div style="margin: 30px">
+          <div class="in-2">
             <div class="col d-flex">
               <img src="./img/select-01.svg" alt="" class="checkSvg" />
               <h5>精準控量，省水省肥料省農藥</h5>
@@ -225,10 +225,7 @@
           </div>
         </div>
         <div class="row justify-content-center pb-5">
-          <a
-            href="./download/REST API - 智慧農業資料匯出.pdf"
-            download="電子型錄"
-          >
+          <a href="./download/慶奇科技智栽DM.pdf" download="電子型錄">
             <button type="button" class="btn btn-outline-secondary">
               下載 DM
             </button></a
@@ -262,7 +259,9 @@
                     onclick="openModal();currentSlide(1)"
                     class="hover-shadow cursor img-fluid"
                   />
-                  <div class="overlay">點我看更多</div>
+                  <div class="overlay" onclick="openModal();currentSlide(1)">
+                    點我看更多
+                  </div>
                 </div>
                 <div class="hoverbox tm-gallery-item">
                   <img
@@ -271,7 +270,9 @@
                     onclick="openModal();currentSlide(2)"
                     class="hover-shadow cursor img-fluid"
                   />
-                  <div class="overlay">點我看更多</div>
+                  <div class="overlay" onclick="openModal();currentSlide(2)">
+                    點我看更多
+                  </div>
                 </div>
                 <div class="hoverbox tm-gallery-item">
                   <img
@@ -280,7 +281,9 @@
                     onclick="openModal();currentSlide(3)"
                     class="hover-shadow cursor img-fluid"
                   />
-                  <div class="overlay">點我看更多</div>
+                  <div class="overlay" onclick="openModal();currentSlide(3)">
+                    點我看更多
+                  </div>
                 </div>
               </div>
               <div id="myModal" class="modal">
@@ -360,16 +363,18 @@
             class="col-sm-12 col-md-4 d-flex align-items-center tm-contact-item"
           >
             <a href="tel:07-3388511" class="tm-contact-item-link">
-              <i class="fas fa-2x fa-phone mr-4"></i>
-              <span class="mb-0">07-3388511</span>
+              <i class="fas fa-2x fa-phone"></i>
+              <span style="margin-left: 24px; font-size: 18px">07-3388511</span>
             </a>
           </div>
           <div
             class="col-sm-12 col-md-4 d-flex align-items-center tm-contact-item"
           >
             <a href="mailto:service@webduino.io" class="tm-contact-item-link">
-              <i class="fas fa-2x fa-envelope mr-4"></i>
-              <span class="mb-0">service@webduino.io</span>
+              <i class="fas fa-2x fa-envelope"></i>
+              <span style="margin-left: 30px; font-size: 18px"
+                >service@webduino.io</span
+              >
             </a>
           </div>
           <div
@@ -380,15 +385,23 @@
               target="_blank"
               class="tm-contact-item-link"
             >
-              <i class="fab fa-facebook-square fa-2x mr-4"></i>
-              <span class="mb-0">慶奇科技智栽農業粉絲專頁</span>
+              <i class="fab fa-facebook-square fa-2x"></i>
+              <span style="margin-left: 34px; font-size: 18px"
+                >慶奇科技智栽農業粉絲專頁</span
+              >
             </a>
           </div>
+
           <div
             class="col-sm-12 col-md-4 d-flex align-items-center tm-contact-item"
           >
-            <i class="fas fa-2x fa-handshake mr-4"></i>
-            <span class="mb-0 d-flex">合作廠商 </span>
+            <a href="" class="tm-contact-item-link">
+              <i class="fas fa-handshake fa-2x"></i>
+
+              <span style="margin-left: 18px; font-size: 18px"
+                >合作廠商
+              </span></a
+            >
           </div>
           <div
             class="col-sm-12 col-md-4 d-flex align-items-center tm-contact-item"
@@ -398,8 +411,10 @@
               target="_blank"
               class="tm-contact-item-link"
             >
-              <i class="fas fa-2x fa-globe mr-4"></i>
-              <span class="mb-0">webduino.io</span>
+              <i class="fas fa-2x fa-globe"></i>
+              <span style="margin-left: 30px; font-size: 18px"
+                >webduino.io</span
+              >
             </a>
           </div>
         </div>
