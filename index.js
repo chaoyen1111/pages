@@ -72,7 +72,7 @@ $(function () {
 
   // Detect window scroll and update navbar
   $(window).scroll(function (e) {
-    if ($(document).scrollTop() > 120) {
+    if ($(document).scrollTop() > 100) {
       $('.tm-navbar').addClass('scroll');
     } else {
       $('.tm-navbar').removeClass('scroll');
@@ -160,6 +160,8 @@ $(function () {
 });
 
 //work閱覽更多場域現場照
+var modal = document.getElementById('myModal');
+
 function openModal() {
   document.getElementById('myModal').style.display = 'block';
 }
@@ -183,8 +185,9 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = 'block';
 }
 
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// }
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
+  // console.log(modal);
+};

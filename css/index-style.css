@@ -29,7 +29,7 @@ a:focus {
 }
 
 .tm-section-pad-top {
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .tm-text-primary {
@@ -50,7 +50,9 @@ a:focus {
 }
 
 /* Navbar */
-
+.navbar {
+  padding: 0 0;
+}
 .tm-navbar {
   position: fixed;
   width: 100%;
@@ -81,7 +83,7 @@ a:focus {
 
 .nav-item {
   list-style: none;
-  margin-right: -20px;
+  /* margin-right: -20px; */
   font-size: 24px;
 }
 
@@ -266,6 +268,9 @@ a:focus {
 }
 
 /* Work */
+/* #work {
+  min-height: 700px;
+} */
 
 .tm-work-description {
   max-width: 650px;
@@ -274,8 +279,8 @@ a:focus {
 }
 
 .tm-gallery-container {
-  padding-top: 70px;
-  padding-bottom: 120px;
+  padding-top: 30px;
+  padding-bottom: 110px;
 }
 
 .tm-gallery-item {
@@ -294,7 +299,7 @@ a:focus {
 .slick-dots li button:focus:before,
 .slick-dots li.slick-active button:before {
   opacity: 1;
-  color: rgb(92, 170, 127);
+  color: rgb(123, 155, 72);
 }
 
 .slick-dots li button:before {
@@ -384,7 +389,7 @@ a:focus {
   background-image: url(../img/bg-b.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  min-height: auto !;
+  min-height: 700px;
   position: relative;
   padding-bottom: 50px;
   padding-top: 100px;
@@ -419,7 +424,7 @@ a:focus {
 
 .tm-contact-item-link:hover i,
 .tm-contact-item-link:hover span {
-  color: rgb(92, 170, 127);
+  color: rgb(123, 155, 72);
 }
 
 .tm-footer {
@@ -642,6 +647,7 @@ a:focus {
   overflow-x: hidden;
   box-shadow: 8px 8px 8px rgb(0, 0, 0, 0.4);
   margin-top: 50px;
+  position: relative;
 }
 
 @media (max-width: 375px) {
@@ -663,7 +669,7 @@ a:focus {
   /* float: right; */
   font-size: 36px;
   font-weight: bold;
-  position: fixed;
+
   right: 20px;
   position: absolute;
 }
@@ -711,12 +717,13 @@ a:focus {
   font-weight: 200;
 }
 
-.tm-col {
+/* .tm-col {
   background-image: url(../img/農耕結合技術.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
+  height: 100vh;
+} */
 
 .tm-h4 {
   color: white;
